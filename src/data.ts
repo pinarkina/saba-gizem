@@ -34,11 +34,15 @@ export type Program = {
   meta: string
   price: string
   duration: string
+  durationLabel?: string
   format: string
+  formatLabel?: string
   group: string
+  groupLabel?: string
   lead: string
   forWhom: string[]
   modules: { title: string; text: string }[]
+  note?: string
 }
 
 export const programs: Program[] = [
@@ -90,6 +94,50 @@ export const programs: Program[] = [
         text: "Yaklaşık 30 sayfalık kişiye özel Numerolojik Yaşam Haritası. Analiz hazırlandıktan sonra 20 dakikalık birebir online görüşmede öne çıkan başlıklar açıklanır ve haritanızın size ne anlattığı birlikte aktarılır.",
       },
     ],
+  },
+  {
+    slug: "ism-i-azam",
+    title: "Kişiye Özel İsm-i Âzam Çalışması",
+    excerpt:
+      "İsmin ve anne ismin üzerinden ebced ile belirlenen iki tamamlayıcı Esmâ, vakti ve manevi yol haritan.",
+    image: "/images/ism-i-azam.jpg",
+    meta: "Kişiye özel",
+    price: "4.777 TL",
+    duration: "İsim + anne ismi",
+    durationLabel: "Dayanak",
+    format: "Ebced hesabı",
+    formatLabel: "Yöntem",
+    group: "Manevi harita",
+    groupLabel: "Kapsam",
+    lead: "İsmin bir mana taşır. Bu çalışma, kişinin kendi ismi ve anne ismi üzerinden yapılan geleneksel ebced hesaplamasıyla başlar. Yaşadığınız sıkıntıyı önceden anlatmanız gerekmez; yöntem, anlatılan probleme göre Esmâ seçmek üzerine kurulmaz. Önce isim konuşur.",
+    forWhom: [
+      "İsminin ve anne isminin ebced karşılığını görmek isteyenler",
+      "Hangi Esmâ ile, hangi niyet ve vakitte çalışacağını öğrenmek isteyenler",
+      "Tekrar eden hayat derslerini sembolik bir mana olarak okumak isteyenler",
+    ],
+    modules: [
+      {
+        title: "İsim ve anne ismi",
+        text: "Ebced değerleri kişisel manevi haritanın temelini oluşturur. Hesap, anlatılan bir probleme göre değil, ismin kendisinden başlar.",
+      },
+      {
+        title: "İki tamamlayıcı Esmâ",
+        text: "Esmâü’l-Hüsnâ’nın 99 ismi içinden iki tamamlayıcı İsm-i Âzam belirlenir. Bu iki isim; geliştirilmesi gereken manevi nitelikler, desteklenmeye ihtiyaç duyulan enerji ve çakra alanları ve bu dünya hayatındaki temel derslerle ilişkilendirilir. Önce eksik alan sorulmaz. Çalışma çıkarılır, Esmâların manaları anlatılır; kişi, bu manaların kendi hayatındaki karşılıklarını kendisi görmeye başlar.",
+      },
+      {
+        title: "Manevi zamanlama",
+        text: "Yalnızca hangi Esmâ değil, hangi gün ve hangi gezegen ile felek saatinde çalışılacağı da hesaplanır. Amaç “bu Esmâ’yı oku” demek değil; hangi Esmâ, hangi niyet, hangi vakit ve hangi manevi karşılık bütünlüğünü öğretmektir. Vakit, duanın bir parçası olarak ele alınır.",
+      },
+      {
+        title: "Melek karşılıkları",
+        text: "Belirlenen vakitlerle geleneksel olarak ilişkilendirilen melek isimleri ve vazifeleri çalışmanın içinde açıklanır.",
+      },
+      {
+        title: "Peygamberî rehberlik",
+        text: "Hesapta ilişkilendirilen felek üzerinden okunan şey, kişinin bir peygambere ait olduğu değil; o peygamberin kıssasındaki manevi dersin hayattaki sembolik karşılığıdır. Sabır, teslimiyet, tevekkül, mücadele, hicret, adalet, yalnızlık, kayıp, bolluk, affetmek, yeniden başlamak. Tekrar, yalnızca “neden başıma geliyor?” tarafından değil, “bu yaşadığım şey bende hangi manayı açığa çıkarmaya çağırıyor?” tarafından da görülür.",
+      },
+    ],
+    note: "Bu çalışma ebced, Esmâü’l-Hüsnâ, geleneksel felek ve gezegen saatleri ile spiritüel yorumlama yaklaşımlarına dayanır. Metafizik ve ruhsal boyuta ilişkin yorumlar inanç temelli ve semboliktir; bilimsel veya tarihsel tespit niteliğinde değildir.",
   },
 ]
 

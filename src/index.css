@@ -1211,6 +1211,13 @@ ul {
   color: var(--ink-soft);
 }
 
+.program-note {
+  margin-top: 40px;
+  max-width: 68ch;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 .price {
   display: block;
   margin-top: 14px;

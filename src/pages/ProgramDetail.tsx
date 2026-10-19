@@ -31,15 +31,15 @@ export function ProgramDetail() {
             <strong>{program.price}</strong>
           </article>
           <article>
-            <small>Süre</small>
+            <small>{program.durationLabel ?? "Süre"}</small>
             <strong>{program.duration}</strong>
           </article>
           <article>
-            <small>Format</small>
+            <small>{program.formatLabel ?? "Format"}</small>
             <strong>{program.format}</strong>
           </article>
           <article>
-            <small>Görüşme</small>
+            <small>{program.groupLabel ?? "Görüşme"}</small>
             <strong>{program.group}</strong>
           </article>
         </div>
@@ -68,6 +68,7 @@ export function ProgramDetail() {
             </Link>
           </aside>
         </div>
+        {program.note && <p className="program-note">{program.note}</p>}
       </section>
 
       {others.length > 0 && (
