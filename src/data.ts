@@ -177,6 +177,48 @@ export const programs: Program[] = [
       },
     ],
   },
+  {
+    slug: "niyetten-eyleme",
+    title: "Niyetten Eyleme",
+    excerpt:
+      "40 niyet kartı, 40 mikro eylem ve ismine özel hazırlanabilen çalışma defteriyle 40 günlük kişisel dönüşüm paketi.",
+    image: "/images/niyetten-eyleme.jpg",
+    meta: "Kişisel paket",
+    price: "3.777 TL",
+    duration: "40 gün",
+    format: "Kart + defter",
+    formatLabel: "Paket",
+    group: "Adrese teslim",
+    groupLabel: "Teslim",
+    lead: "40 gün, 40 niyet, 40 farkındalık alanı, 40 küçük eylem. Niyetten Eyleme, olumlu cümleleri okumak için değil; niyeti farkındalık ve günlük küçük eylemlerle hayatın içine taşımak için hazırlanmış 40 günlük kişisel bir yolculuktur. Çalışma paketi adresine gönderilir.",
+    forWhom: [
+      "Niyetini günlük hayata taşımak isteyenler",
+      "Olumlu cümle tekrarından çok küçük bir eylem arayanlar",
+      "40 gün kendine bilinçli bir alan açmak isteyenler",
+    ],
+    modules: [
+      {
+        title: "40 özgün niyet kartı",
+        text: "Her gün bir kart açılır. Kartlar çalışmaya özel hazırlanır ve her biri farklı bir yaşam alanına dokunur: bereket, özdeğer, cesaret, güven, sınır, almak ve vermek, yenilik, bırakmak, ilişkiler, görünürlük.",
+      },
+      {
+        title: "40 farkındalık alanı",
+        text: "Her niyetin ardındaki konu, o günün çalışma alanıyla biraz daha derinden görülür. Önce niyet fark edilir, sonra onun kendi hayatındaki karşılığına bakılır.",
+      },
+      {
+        title: "40 mikro eylem",
+        text: "Niyet düşüncede kalmasın diye her güne küçük ve uygulanabilir bir adım konur. Sistem, neye inanılacağını söyleyen 40 cümle değil; fark et, gör, hayata geçir düzenidir.",
+      },
+      {
+        title: "40 günlük çalışma defteri",
+        text: "İsme özel hazırlanabilen bu defter, yolculuğun kişisel kaydıdır. Fark edilenler, deneyimler ve dönüşüm notları burada birikir. 40 günün sonunda elde tamamlanmış kartlarla birlikte yalnızca sana ait bir defter kalır.",
+      },
+      {
+        title: "Başlangıç ve kapanış ritüelleri",
+        text: "Güne hangi odakla başlanacağı ve günün nasıl tamamlanacağı, paketin içindeki uygulama rehberiyle aktarılır.",
+      },
+    ],
+  },
 ]
 
 export const products = [
