@@ -139,6 +139,44 @@ export const programs: Program[] = [
     ],
     note: "Bu çalışma ebced, Esmâü’l-Hüsnâ, geleneksel felek ve gezegen saatleri ile spiritüel yorumlama yaklaşımlarına dayanır. Metafizik ve ruhsal boyuta ilişkin yorumlar inanç temelli ve semboliktir; bilimsel veya tarihsel tespit niteliğinde değildir.",
   },
+  {
+    slug: "korkularla-yuzlesme",
+    title: "Korkularla Yüzleşme",
+    excerpt:
+      "Tek bir konu üzerinden ilerleyen 21 günlük grup çalışması. 21 korku, 21 olumlu inanç ve kişiye özel çalışma defteri.",
+    image: "/images/korkularla-yuzlesme.jpg",
+    meta: "Grup çalışması",
+    price: "777 TL",
+    duration: "21 gün",
+    format: "Rehberli defter",
+    formatLabel: "Yöntem",
+    group: "Grup",
+    groupLabel: "Biçim",
+    lead: "Bizi durduran, ertelemeye yol açan ya da aynı döngüyü tekrar ettiren korkular vardır. Kimi zaman farkındayızdır; kimi zaman onları yalnızca verdiğimiz tepkilerden ve yaptığımız seçimlerden tanırız. Korkularla Yüzleşme, belirlenen tek bir konu üzerinden ilerleyen 21 günlük rehberli bir farkındalık ve inanç çalışmasıdır. Amaç olumlu cümleleri tekrar etmek değil; korkunun altındaki düşünceyi görüp inancı yeniden yazmaktır.",
+    forWhom: [
+      "Belli bir konuda erteleyen ya da aynı döngüye dönenler",
+      "Korkusunu tepkilerinden ve seçimlerinden tanıyanlar",
+      "Tek bir yaşam alanını 21 günde derinlemesine çalışmak isteyenler",
+    ],
+    modules: [
+      {
+        title: "21 korku, 21 inanç",
+        text: "Seçilen konuya ilişkin 21 temel korku alanı ele alınır. Her korkuya karşılık, kişiyi destekleyen 21 olumlu inanç cümlesiyle çalışılır.",
+      },
+      {
+        title: "Korkularla Yüzleşme Defteri",
+        text: "Katılımcıya özel hazırlanan defterle korkunun altındaki düşünce kalıpları fark edilir. Kişi kendi cevaplarını görür ve bu cevaplardan kendisine ait yeni destekleyici inançlar oluşturur.",
+      },
+      {
+        title: "21 günlük uygulama",
+        text: "Çalışmanın nasıl uygulanacağı, defterin nasıl kullanılacağı ve korkuların hangi yöntemle açılarak çalışılacağı adım adım öğretilir. Rehberli farkındalık uygulamaları ve 21 günlük uygulama sistemi sürecin içindedir.",
+      },
+      {
+        title: "Tek alan, sonra bir sonraki",
+        text: "Bir konu üzerindeki 21 gün tamamlandıktan sonra aynı yöntemle başka bir yaşam alanına geçilebilir: ilişkiler, para, değer, güven, başarı, görünürlük, terk edilme, yetersizlik, gelecek. Her çalışma tek bir alanı derinlemesine ele alır.",
+      },
+    ],
+  },
 ]
 
 export const products = [
