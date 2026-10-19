@@ -17,7 +17,7 @@ export function Founder() {
             “İyileşmek gürültülü olmak zorunda değil. Bazen yalnızca doğru ışık,
             doğru kelime ve doğru tempo yeter.”
           </p>
-          <img className="sign" src="/images/imza-ink.png" alt="Saba Gizem Mutlu" />
+          <img className="sign" src="/images/imza-ink.png" alt="Saba Gizem Utlu" />
           <div className="founder-points">
             <article>
               <h3>Bilinçli eğitimler</h3>
