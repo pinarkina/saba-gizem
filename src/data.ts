@@ -26,97 +26,68 @@ export const collectionCategories = [
   "Hediye Setleri",
 ] as const
 
-export const programs = [
+export type Program = {
+  slug: string
+  title: string
+  excerpt: string
+  image: string
+  meta: string
+  price: string
+  duration: string
+  format: string
+  group: string
+  lead: string
+  forWhom: string[]
+  modules: { title: string; text: string }[]
+}
+
+export const programs: Program[] = [
   {
-    slug: "kendine-donus",
-    title: "21 Günlük Kendine Dönüş",
-    excerpt: "Günlük ritüeller, sessizlik ve beden bilinciyle içsel dengeyi yeniden kurun.",
-    image:
-      "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1600&q=80",
-    meta: "Yeni seri",
-    duration: "21 gün",
-    format: "Kayıtlı + canlı kapanış",
-    group: "Sınırlı kontenjan",
-    lead: "Üç haftalık sakin bir ritim. Her gün kısa, uygulanabilir bir pratik; haftada bir derinleşme.",
+    slug: "numerolojik-analiz",
+    title: "Kişiye Özel Numerolojik Analiz",
+    excerpt:
+      "Doğum tarihiniz ve isminiz üzerinden hazırlanan kişisel numerolojik harita. Karakter, ilişki, kariyer ve tekrar eden yaşam temaları.",
+    image: "/images/numerolojik-analiz.jpg",
+    meta: "Kişiye özel",
+    price: "4.500 TL",
+    duration: "30 sayfa",
+    format: "Rapor + online görüşme",
+    group: "20 dk birebir",
+    lead: "Neden bazı şeyler sürekli tekrar ediyor, neden hep benzer insanlarla karşılaşıyorsunuz, neden bazı konularda kolay ilerlerken bazı alanlarda aynı noktaya dönüyorsunuz? Doğduğunuz tarih ve size verilen isim üzerinden çıkarılan bu harita, birkaç sayı hesabı değil; hayatınızın farklı alanlarını bir bütün olarak okuyan kişiye özel bir çalışmadır.",
     forWhom: [
-      "Tempo kaybetmiş, yeniden düzen arayanlar",
-      "Meditasyona yeni başlayanlar",
-      "Güne ve geceye yumuşak bir çerçeve isteyenler",
+      "Hayatında bazı şeylerin sürekli tekrar ettiğini fark edenler",
+      "Hep benzer insanlarla karşılaşanlar",
+      "Bazı konularda kolay ilerlerken bazı alanlarda aynı noktaya dönenler",
+      "İlişki, kariyer ve para kalıplarını adıyla görmek isteyenler",
     ],
     modules: [
       {
-        title: "Hafta 1 · Sessizlik",
-        text: "Nefes, sabah duruşu ve telefonu evin dışına bırakma alıştırmaları.",
+        title: "Karakter yapınız",
+        text: "Doğuştan getirdiğiniz yapı ve güçlü taraflar. Hangi özelliklerin sizi desteklediği, hangi yeteneklerinizi yeterince kullanmadığınız, dışarıdan nasıl algılandığınız ve içinizdeki gerçek motivasyon.",
       },
       {
-        title: "Hafta 2 · Beden",
-        text: "Yürüme, uyku ve sofra ritmiyle bedeni tekrar merkeze alma.",
+        title: "Tekrar eden temalar",
+        text: "İlişkilerde, ailede, para ve kariyerde neden benzer döngüler yaşayabildiğiniz; hangi konuların tekrar tekrar karşınıza çıktığı ve bunların hangi gelişim alanlarına işaret ettiği.",
       },
       {
-        title: "Hafta 3 · Yön",
-        text: "21 günün ardından evde kalacak üç kişisel ritüeli netleştirme.",
-      },
-    ],
-  },
-  {
-    slug: "kadinlar-icin",
-    title: "Kadınlar İçin Ruhsal Güçlenme",
-    excerpt: "Sınır, ses ve özdeğer üzerine zarif, derin ve uygulaması kolay bir yol.",
-    image:
-      "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1600&q=80",
-    meta: "Canlı program",
-    duration: "6 hafta",
-    format: "Canlı oturumlar",
-    group: "Kapalı kadın grubu",
-    lead: "Sesini kısan alışkanlıkları nazikçe çözmek için seçilmiş bir çevre ve ölçülü bir müfredat.",
-    forWhom: [
-      "Hayır demekte zorlananlar",
-      "İlişki ve işte kendini geri çekenler",
-      "Gücü gürültü olmadan taşımak isteyenler",
-    ],
-    modules: [
-      {
-        title: "Sınır",
-        text: "Nerede tükendiğinizi görmek ve ev, iş, ilişkide net bir çerçeve kurmak.",
+        title: "Geliştirilmesi gereken yönler",
+        text: "Haritada yeterince çalışmayan alanlar ve hangi özelliklerinizi güçlendirmeniz gerekebileceği. Adını koyamadığınız eksiklerin görünür hale gelmesi.",
       },
       {
-        title: "Ses",
-        text: "İsteği utanmadan söylemek; konuşmayı bir performans olmaktan çıkarmak.",
+        title: "İlişki dinamikleri",
+        text: "Sevgiyi nasıl verdiğiniz ve aldığınız, ilişkide neye ihtiyaç duyduğunuz, sizi hangi karakterlerin çekebildiği ve tekrar eden davranış biçimleriniz.",
       },
       {
-        title: "Özdeğer",
-        text: "Onayı dışarıda aramayı bırakıp duruşu içeriden taşımak.",
-      },
-    ],
-  },
-  {
-    slug: "ozgurluk",
-    title: "Para ve Özgürlük Masterclass",
-    excerpt: "Bolluğu bir sayı değil, bir duruş olarak ele alan seçkin bir çalışma.",
-    image:
-      "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?auto=format&fit=crop&w=1600&q=80",
-    meta: "Masterclass",
-    duration: "4 oturum",
-    format: "Masterclass kaydı",
-    group: "Açık katılım",
-    lead: "Para ile kurulan gergin ilişkiyi sadeleştirmek; kararları korkudan değil netlikten vermek.",
-    forWhom: [
-      "Kazansa da yetmeyen bir sıkışma yaşayanlar",
-      "İşini büyütürken değerini düşürenler",
-      "Özgürlüğü yalnızca hesapta arayanlar",
-    ],
-    modules: [
-      {
-        title: "Dil",
-        text: "Para hakkında konuşurken kullanılan utanç ve acele dilini fark etmek.",
+        title: "Para, kariyer ve üretim",
+        text: "Hangi çalışma biçimlerinde daha rahat ilerleyebileceğiniz, liderlik ve girişimcilik tarafınız, para ile kurduğunuz ilişki ve sizi üretimde destekleyen özellikler.",
       },
       {
-        title: "Karar",
-        text: "Harcamayı, fiyatı ve seçimi bir duruş olarak ele almak.",
+        title: "Yaşam döngünüz",
+        text: "Şu anda hangi yaşam temasının ön planda olduğu, önünüzdeki dönemin hangi konuları vurguladığı ve enerjinizi hangi alanlarda daha bilinçli kullanabileceğiniz.",
       },
       {
-        title: "Alan",
-        text: "Bolluğu evin ritmine, zamana ve seçilmiş çevreye yaymak.",
+        title: "Rapor ve görüşme",
+        text: "Yaklaşık 30 sayfalık kişiye özel Numerolojik Yaşam Haritası. Analiz hazırlandıktan sonra 20 dakikalık birebir online görüşmede öne çıkan başlıklar açıklanır ve haritanızın size ne anlattığı birlikte aktarılır.",
       },
     ],
   },

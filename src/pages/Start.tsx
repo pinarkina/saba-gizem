@@ -1,11 +1,9 @@
 import { useState, type FormEvent } from "react"
 import { useSearchParams } from "react-router-dom"
-import { contactEmail } from "../data"
+import { contactEmail, programs } from "../data"
 
 const interests: Record<string, string> = {
-  "kendine-donus": "21 Günlük Kendine Dönüş",
-  "kadinlar-icin": "Kadınlar İçin Ruhsal Güçlenme",
-  ozgurluk: "Para ve Özgürlük",
+  ...Object.fromEntries(programs.map((item) => [item.slug, item.title])),
   "rituel-defteri": "Ritüel Defteri",
   "meditasyon-kartlari": "Rehber Kartlar",
   workbook: "Dijital Workbook",
@@ -15,7 +13,7 @@ const interests: Record<string, string> = {
 export function Start() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle")
   const [params] = useSearchParams()
-  const selected = params.get("program") ?? "kendine-donus"
+  const selected = params.get("program") ?? programs[0]?.slug ?? "rituel-defteri"
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()

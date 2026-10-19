@@ -92,6 +92,7 @@ export function Home() {
                   <span className="meta">{item.meta}</span>
                   <h3>{item.title}</h3>
                   <p>{item.excerpt}</p>
+                  <span className="price">{item.price}</span>
                   <span className="text-link">Programı aç →</span>
                 </div>
               </Link>

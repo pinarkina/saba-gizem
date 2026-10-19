@@ -27,6 +27,10 @@ export function ProgramDetail() {
 
         <div className="fact-row">
           <article>
+            <small>Ücret</small>
+            <strong>{program.price}</strong>
+          </article>
+          <article>
             <small>Süre</small>
             <strong>{program.duration}</strong>
           </article>
@@ -35,7 +39,7 @@ export function ProgramDetail() {
             <strong>{program.format}</strong>
           </article>
           <article>
-            <small>Grup</small>
+            <small>Görüşme</small>
             <strong>{program.group}</strong>
           </article>
         </div>
@@ -74,6 +78,7 @@ export function ProgramDetail() {
               <span className="meta">{item.meta}</span>
               <h3>{item.title}</h3>
               <p>{item.excerpt}</p>
+              <span className="price">{item.price}</span>
               <span className="text-link">Programı aç →</span>
             </Link>
           ))}
