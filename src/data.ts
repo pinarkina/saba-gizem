@@ -219,6 +219,49 @@ export const programs: Program[] = [
       },
     ],
   },
+  {
+    slug: "bolluk-bereket",
+    title: "40 Günlük Bolluk ve Bereket Dönüşümü",
+    excerpt:
+      "Para ve bereketle kurulan ilişkiyi içeriden değiştiren 40 günlük grup çalışması. Tek niyet, her gün küçük bir adım.",
+    image: "/images/bolluk-bereket.jpg",
+    meta: "Grup çalışması",
+    price: "4.777 TL",
+    duration: "40 gün",
+    format: "Grup dersleri",
+    formatLabel: "Biçim",
+    group: "Günlük uygulama",
+    groupLabel: "Ritim",
+    lead: "Bereket yalnızca daha çok kazanmak değildir; almaya, çoğalmaya ve hayatın sunduklarını kabul etmeye ne kadar açık olduğunla ilgilidir. Bu program, para ve bereket konusundaki düşünce ve inanç kalıplarını fark etmek, bereket bilincini güçlendirmek ve yeni bir içsel bakış geliştirmek için hazırlanmış 40 günlük bir grup çalışmasıdır. Bir gecede zenginleşme vaadi değildir.",
+    forWhom: [
+      "Para konusunda aynı döngüleri yaşadığını düşünenler",
+      "Kazansa da bereket hissini yaşayamayanlar",
+      "Almakta zorlanan ya da maddi konularda yetersizlik hissedenler",
+      "Bollukla ilişkisini daha bilinçli bir yerden kurmak isteyenler",
+    ],
+    modules: [
+      {
+        title: "Sınırlayıcı düşünceler",
+        text: "Para, kazanç ve sahip olma konusunda farkında olmadan taşınan düşünceler görülür. Bu düşüncelerin hayatla kurulan ilişkiyi ve seçimleri nasıl etkilediğine bakılır.",
+      },
+      {
+        title: "Yokluktan yeterliliğe",
+        text: "“Yokluk” odağından çıkıp bolluk ve yeterlilik bilinci beslenir. Her güne özel farkındalık ve inanç çalışmaları zihinsel dönüşümü destekler.",
+      },
+      {
+        title: "Alma ve verme",
+        text: "Alma-verme dengesi ve bereketi kabul etmeye dair içsel alan gözlemlenir. Bolluk dışarıda aranmaz; onunla kurulan ilişki içeriden değişir.",
+      },
+      {
+        title: "40 gün, tek niyet",
+        text: "Tek bir niyetle, her gün küçük ama istikrarlı bir adım atılır. Grup dersleri, günlük uygulamalar ve 40 güne yayılan farkındalık çalışmaları süreci birlikte ilerletir.",
+      },
+      {
+        title: "Birlikte tamamlamak",
+        text: "Tek başına başlayıp yarım bırakılan çalışmalardan farklı olarak 40 günlük süreç grup enerjisiyle birlikte tamamlanır.",
+      },
+    ],
+  },
 ]
 
 export const products = [
